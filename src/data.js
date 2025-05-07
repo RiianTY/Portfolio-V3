@@ -1,7 +1,7 @@
 export default [
   {
     title: "Movie watchlist",
-    image: "/static/images/movie-watchlist.png",
+    image: "/static/images/Movie-watchlist.png",
     description: `Part of a scrimba project, using an api from
                       www.omdbapi.com, to call movie data, and add the data to a
                       watchlist stored in local storage`,

@@ -31,6 +31,10 @@ header {
   margin-bottom: 1em;
 }
 
+#header-txt {
+  width: 100%;
+}
+
 h1 {
   font-size: 3em;
 }
@@ -39,19 +43,14 @@ h3 {
   font-size: 1.6em;
 }
 
-#about-me h3,
-#skills h3 {
-  margin: 1rem 0 0.5rem 0;
+#about-me h3 {
+  margin: 1rem 0 1rem 0;
 }
 
-#about-me p,
-#skills li {
+#about-me p {
   font-weight: 400;
   font-size: 1.2rem;
-}
-
-#skills {
-  margin-bottom: 30px;
+  margin-top: 0.5rem;
 }
 
 .socials {
@@ -70,13 +69,6 @@ h3 {
   color: #ffffff;
 }
 
-#header-txt {
-  width: 100%;
-}
-
-#about-me {
-  margin: 2em 0 1rem 0;
-}
 ul {
   list-style-type: none;
 }
@@ -91,8 +83,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  margin-top: 2em;
 }
 
 .project {

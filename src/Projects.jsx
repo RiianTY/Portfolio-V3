@@ -10,7 +10,7 @@ export default function Projects(data) {
   });
 
   return (
-    <div className="project">
+    <div className="project project-container">
       <img id="project-img" src={data.image} alt="" />
       <div className="overlay project">
         <div className="description">
