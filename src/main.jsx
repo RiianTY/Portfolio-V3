@@ -32,20 +32,22 @@ function typeWriter(txt, elementId, speed, callback) {
   typing();
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Start the first typewriter effect
-  typeWriter("Ryan Daynes", "header-txt", 80, function () {});
-});
+{
+  document.addEventListener("DOMContentLoaded", () => {
+    // Start the first typewriter effect
+    typeWriter("Ryan Daynes", "header-txt", 80, function () {});
+  });
 
-document.addEventListener("mousemove", function (event) {
-  const element = document.querySelector(".pointer-events-none");
+  document.addEventListener("mousemove", function (event) {
+    const element = document.querySelector(".pointer-events-none");
 
-  if (element) {
-    // Calculate the background position based on cursor position
-    const xPos = event.pageX;
-    const yPos = event.pageY;
+    if (element) {
+      // Calculate the background position based on cursor position
+      const xPos = event.pageX;
+      const yPos = event.pageY;
 
-    // Update the background with a radial gradient
-    element.style.background = `radial-gradient(circle at ${xPos}px ${yPos}px, rgba(255, 255, 255, 1) 20px, rgba(0, 0, 0, 0) 100px)`;
-  }
-});
+      // Update the background with a radial gradient
+      element.style.background = `radial-gradient(circle at ${xPos}px ${yPos}px, rgba(255, 255, 255, 1) 20px, rgba(0, 0, 0, 0) 100px)`;
+    }
+  });
+}
