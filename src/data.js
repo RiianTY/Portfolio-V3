@@ -1,7 +1,7 @@
 export default [
   {
     title: "Movie watchlist",
-    image: "./src/assets/Movie-watchlist.png",
+    image: "/static/images/movie-watchlist.png",
     description: `Part of a scrimba project, using an api from
                       www.omdbapi.com, to call movie data, and add the data to a
                       watchlist stored in local storage`,
@@ -12,7 +12,7 @@ export default [
   },
   {
     title: "Colour Generator",
-    image: "./src/assets/Colour-gen.png",
+    image: "/static/images/Colour-gen.png",
     description: `Part of a scrimba solo project using the colour Generator
                       API`,
     stack: ["Html", "Css", "JavaScript"],
@@ -22,7 +22,7 @@ export default [
   },
   {
     title: "Weather App",
-    image: "./src/assets/Weather-app.png",
+    image: "/static/images/Weather-app.png",
     description: `My first introduction into using apis, without any
                       tutorial assistance`,
     stack: ["Html", "Css", "JavaScript"],
@@ -32,7 +32,7 @@ export default [
   },
   {
     title: "Restaurant App",
-    image: "./src/assets/Restaurant.png",
+    image: "/static/images/Restaurant.png",
     description: `Project created as part of the scrimba course, as a way to
                       learn Javascript to add and remove items from a cart`,
     stack: ["Html", "Css", "JavaScript"],
@@ -42,7 +42,7 @@ export default [
   },
   {
     title: "Portfolio V2",
-    image: "./src/assets/project1.png",
+    image: "/static/images/project1.png",
     description: `My portfolio site hand coded based off what i learnt from
                       scrimba`,
     stack: ["Html", "Css", "JavaScript"],
