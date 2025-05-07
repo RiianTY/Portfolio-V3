@@ -1,3 +1,5 @@
+import "./App.css";
+
 export default function Projects(data) {
   const buttonGen = data.stack.map((item, index) => {
     return (
