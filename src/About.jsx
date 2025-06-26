@@ -7,15 +7,15 @@ function About() {
           {`I’m a self-taught developer who’s been learning to code in my spare
           time, using platforms such as `}
           <a target="_blank" href="https://scrimba.com">
-            {`Scrimba `}
+            {`Scrimba`}
           </a>
           ,
           <a target="_blank" href="https://www.codecademy.com">
-            {`Codecademy `}
+            {` Codecademy `}
           </a>
           and
           <a target="_blank" href="https://www.udemy.com">
-            {`Udemy `}
+            {` Udemy `}
           </a>
           {`to build my skills. I recently discovered how much I enjoy creating
           intuitive, user-friendly applications, with my current focus being
