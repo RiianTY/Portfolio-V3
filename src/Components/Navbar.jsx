@@ -103,9 +103,13 @@ export default function Navbar() {
 
       {/* Mobile menu - full screen */}
       <ul
-        className={`sm:hidden fixed top-0 left-0 h-screen w-screen bg-gray-900 flex flex-col items-center justify-center gap-10 transition-transform duration-300 z-40 ${
+        className={`sm:hidden fixed top-0 left-0 h-screen w-screen flex flex-col items-center justify-center gap-10 transition-transform duration-300 z-40 ${
           menuOpen && visible ? "translate-x-0" : "translate-x-full"
         }`}
+        style={{
+          backgroundColor: menuOpen ? "#004b4b" : "#1e293b", // #1e293b is Tailwind's bg-gray-900 fallback
+          transition: "background-color 0.3s",
+        }}
       >
         <li>
           <button
