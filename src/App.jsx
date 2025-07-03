@@ -11,13 +11,22 @@ import "./App.css";
 export default function App() {
   const headerRef = useRef(null);
   const [showArrow, setShowArrow] = useState(true);
+  const scrollTimeout = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       if (!headerRef.current) return;
       const rect = headerRef.current.getBoundingClientRect();
-      // Show arrow only when header is mostly visible at the top
       setShowArrow(rect.top >= 0 && rect.bottom > 100);
+
+      // Hide arrow while scrolling on mobile
+      if (window.innerWidth < 768) {
+        setShowArrow(false);
+        if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+        scrollTimeout.current = setTimeout(() => {
+          setShowArrow(rect.top >= 0 && rect.bottom > 100);
+        }, 200); // Show arrow 200ms after scroll stops
+      }
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
