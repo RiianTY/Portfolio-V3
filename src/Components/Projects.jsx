@@ -1,16 +1,21 @@
 import "../App.css";
 
 export default function Projects(data) {
-  const stack = data.stack.map((item, index) => {
-    return (
-      <span key={index} className="stack">
-        {item}
-      </span>
-    );
-  });
+  const stack = data.stack.map((item, index) => (
+    <span key={index} className="stack">
+      {item}
+    </span>
+  ));
+
+  // Add a prop for index and use it to reverse on even
+  const isEven = data.index % 2 === 1;
 
   return (
-    <div className="project grid grid-cols-1 md:grid-cols-2 items-center justify-center max-w-1xl box-border relative transition-colors duration-300 bg-transparent max-w-[800px] mb-25">
+    <div
+      className={`project flex flex-col md:flex-row ${
+        isEven ? "md:flex-row-reverse" : ""
+      } items-center justify-center max-w-1xl box-border relative transition-colors duration-300 bg-transparent max-w-[800px] mb-25`}
+    >
       <div className="flex justify-center mb-5 sm:mb-5 md:z-0">
         <img
           src={data.image}
