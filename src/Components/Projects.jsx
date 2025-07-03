@@ -10,12 +10,12 @@ export default function Projects(data) {
   });
 
   return (
-    <div className="project grid grid-cols-1 md:grid-cols-2 items-center justify-center max-w-1xl box-border relative transition-colors duration-300 bg-transparent max-w-[800px] mb-25 mx-auto">
-      <div className="flex justify-center mb-5 sm:mb-5 md:z-0">
+    <div className="project grid grid-cols-1 md:grid-cols-2 items-center justify-center max-w-1xl box-border relative transition-colors duration-300 bg-transparent max-w-[800px] mb-15 mx-auto">
+      <div className="flex justify-center items-center mb-5 sm:mb-5 md:z-0">
         <img
           src={data.image}
           alt="Halcyon Theme Screenshot"
-          className="project-img max-w-full min-w-[350px] h-auto rounded-sm opacity-90 transition-transform duration-400 ease-in-out"
+          className="project-img max-w-full min-w-[350px] h-auto rounded-sm opacity-90 transition-transform duration-400 ease-in-out mx-auto"
         />
       </div>
       <div className="flex flex-col justify-center max-h-[300px] relative z-20 md:items-end md:text-right sm:text-left sm:items-start">

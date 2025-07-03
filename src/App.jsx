@@ -6,6 +6,7 @@ import Footer from "./Components/Footer.jsx";
 import Header from "./Components/Header.jsx";
 import ScrollArrow from "./Components/ScrollArrow.jsx";
 import JumpToTop from "./Components/JumpToTop.jsx";
+import "./App.css";
 
 export default function App() {
   const headerRef = useRef(null);
@@ -46,7 +47,7 @@ export default function App() {
         <About />
       </div>
 
-      <div id="projects" className="hero mb-15 z-30">
+      <div id="projects" className="hero mb-30 mt-30 mt-50 z-30">
         <h1 className=" hero-title">My Projects</h1>
         <span className="hero-line"></span>
       </div>
