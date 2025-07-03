@@ -1,11 +1,34 @@
+import "../App.css";
+import Typewriter from "./Typewriter";
+
 export default function Header() {
   return (
-    <header className="left-container">
+    <header id="header" className="header-section">
       <section>
-        <h1 id="header-txt"></h1>
-        <h3>Software engineer</h3>
-        <p>coding stuff</p>
-        <div className="socials">
+        <h4 className=" testing text-[1rem] text-slate-50">
+          Hello there, my name is
+        </h4>
+        <h1
+          id="header-txt"
+          className="md:text-[6rem] sm:text-[4rem] text-[3.2rem] font-bold tracking-wide text-slate-100"
+        >
+          <Typewriter text="Ryan Daynes" speed={80} loop={false} />
+        </h1>
+        <h3 className="md:text-[4rem] text-[2.4rem] text-slate-300 mb-4 font-bold">
+          Coding Enthusiast
+        </h3>
+        <p className="md:text-[1.4rem] text-[1.2rem] text-slate-300 mb-6">
+          I am a self-taught front-end web developer, looking to get into
+          full-stack I am currently looking for a job in the industry, so if you
+          are interested in hiring me, please&nbsp;
+          <a
+            className="text-[#ffff] hover:text-[#]"
+            href="mailto:info@ryandaynes.uk"
+          >
+            click here to get in touch!
+          </a>
+        </p>
+        <div className="flex justify-center socials gap-3">
           <a className="icon" href="https://x.com/RiianTTV">
             <svg className="icon" width="32px" height="32px">
               <path d="M4.01758,4l9.07422,13.60938l-8.75586,10.39063h2.61523l7.29492,-8.65625l5.77148,8.65625h0.53516h7.46289l-9.30273,-13.95703l8.46289,-10.04297h-2.61523l-7.00195,8.31055l-5.54102,-8.31055zM7.75586,6h3.19141l13.33203,20h-3.19141z"></path>
