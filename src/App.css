@@ -2,9 +2,9 @@
 
 * {
   font-family: "Roboto", sans-serif;
-  /* scroll-behavior: smooth; */
-  scrollbar-width: thin;
-  scrollbar-color: rgb(39, 39, 42) transparent;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  /* scrollbar-color: rgb(39, 39, 42) transparent; */
 }
 
 body {
