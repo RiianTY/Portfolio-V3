@@ -5,7 +5,7 @@ export default function About() {
         id="about-me"
         className="container flex flex-col h-full items-center justify-center"
       >
-        <div className="hero mb-15 z-30">
+        <div className="hero mb-30 z-30">
           <h1 className=" hero-title">About Me</h1>
           <span className="hero-line"></span>
         </div>

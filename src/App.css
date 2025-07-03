@@ -13,7 +13,7 @@ body {
 
 /* default margin */
 .main-con {
-  margin: 0 25px;
+  margin: 0 5%;
 }
 
 /* force to center */
@@ -71,7 +71,7 @@ ul {
   font-size: 1.5rem;
   font-weight: 700;
   color: #ffffff;
-  width: 270px;
+  width: 225px;
   color: #daf1ff;
 }
 
@@ -121,6 +121,14 @@ footer {
 }
 
 /* projects list reverse everyother */
+
+.projects-list .project:nth-child(even) {
+  direction: rtl;
+}
+
+.projects-list .project:nth-child(even) > * {
+  direction: ltr;
+}
 
 .projects-list .project:nth-child(even) .flex-col {
   align-items: flex-start !important;
