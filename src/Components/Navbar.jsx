@@ -3,11 +3,13 @@ import { useEffect, useRef, useState } from "react";
 export default function Navbar() {
   const [visible, setVisible] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [atTop, setAtTop] = useState(true);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
+      setAtTop(currentY === 0);
       if (currentY === 0) {
         setVisible(true);
       } else if (currentY > lastScrollY.current) {
@@ -33,9 +35,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed left-0 top-0 w-full sm:bg-transparent md:bg-[#002525] py-4 z-50 transition-transform duration-300 ${
-        visible ? "translate-y-0" : "-translate-y-full"
-      }`}
+      className={`fixed left-0 top-0 w-full py-4 z-50 transition-transform duration-300 ${
+        atTop
+          ? "bg-transparent"
+          : "sm:bg-transparent lg:bg-[#0e2525 md:bg-[#0e2525] xl:bg-[#0e2525]"
+      } shadow-none ${visible ? "translate-y-0" : "-translate-y-full"}`}
       style={{ width: "100vw" }}
     >
       {/* Hamburger/X button for small screens */}
@@ -107,7 +111,7 @@ export default function Navbar() {
           menuOpen && visible ? "translate-x-0" : "translate-x-full"
         }`}
         style={{
-          backgroundColor: menuOpen ? "#004b4b" : "#1e293b", // #1e293b is Tailwind's bg-gray-900 fallback
+          backgroundColor: menuOpen ? "#004b4b" : "#1e293b",
           transition: "background-color 0.3s",
         }}
       >
