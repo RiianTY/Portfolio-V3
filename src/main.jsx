@@ -12,7 +12,7 @@ function AuraBackground() {
       const xPos = event.clientX;
       const yPos = event.clientY;
       if (auraRef.current) {
-        auraRef.current.style.background = `radial-gradient(circle at ${xPos}px ${yPos}px, rgba(0, 175, 175, 1) 40px, rgba(0, 75, 75, 1) 200px)`;
+        auraRef.current.style.background = `radial-gradient(circle at ${xPos}px ${yPos}px, rgba(220, 220, 220, 0.75) 40px, rgba(0, 0, 0, 1) 200px)`;
       }
     }
     window.addEventListener("mousemove", handleMouseMove);

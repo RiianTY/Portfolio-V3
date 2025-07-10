@@ -38,7 +38,7 @@ export default function Navbar() {
       className={`fixed left-0 top-0 w-full py-4 z-50 transition-transform duration-300 ${
         atTop
           ? "bg-transparent"
-          : "sm:bg-transparent lg:bg-[#0e2525 md:bg-[#0e2525] xl:bg-[#0e2525]"
+          : "sm:bg-transparent lg:bg-black md:bg-black xl:bg-black"
       } shadow-none ${visible ? "translate-y-0" : "-translate-y-full"}`}
       style={{ width: "100vw" }}
     >
@@ -74,7 +74,7 @@ export default function Navbar() {
         <li>
           <button
             onClick={() => handleNavClick("header")}
-            className="bg-transparent border-none cursor-pointer text-white font-semibold hover:text-cyan-300 transition-colors duration-200"
+            className="bg-transparent border-none cursor-pointer text-white font-semibold hover:text-gray-400 transition-colors duration-200"
           >
             Home
           </button>
@@ -82,7 +82,7 @@ export default function Navbar() {
         <li>
           <button
             onClick={() => handleNavClick("about")}
-            className="bg-transparent border-none cursor-pointer text-white font-semibold hover:text-cyan-300 transition-colors duration-200"
+            className="bg-transparent border-none cursor-pointer text-white font-semibold hover:text-gray-400 transition-colors duration-200"
           >
             About
           </button>
@@ -90,7 +90,7 @@ export default function Navbar() {
         <li>
           <button
             onClick={() => handleNavClick("projects")}
-            className="bg-transparent border-none cursor-pointer text-white font-semibold hover:text-cyan-300 transition-colors duration-200"
+            className="bg-transparent border-none cursor-pointer text-white font-semibold hover:text-gray-400 transition-colors duration-200"
           >
             Projects
           </button>
@@ -98,7 +98,7 @@ export default function Navbar() {
         <li>
           <button
             href="mailto:info@ryandaynes.uk"
-            className="bg-transparent border-none cursor-pointer text-white font-semibold hover:text-cyan-300 transition-colors duration-200"
+            className="bg-transparent border-none cursor-pointer text-white font-semibold hover:text-gray-400 transition-colors duration-200"
           >
             <a href="mailto:info@ryandaynes.uk">Contact</a>
           </button>

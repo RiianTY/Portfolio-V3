@@ -22,7 +22,7 @@ export default function Projects(data) {
         <h1 className=" data text-slate-100 text-[1.6rem] font-semibold md:mb-4 sm:mt-4 sm:mb-1">
           {data.title}
         </h1>
-        <div className="desc-box md:bg-[#003030] text-[#b8c7d9] rounded-sm md:px-6 py-5 md:min-w-[450px] md:max-w-[500px] md:mb-3 md:mt-3 sm:mb-1 relative z-30 transition-all duration-500 ease-in-out text-[.9rem] md:text-right sm:text-left sm">
+        <div className="desc-box md:bg-gray-800 text-[#b8c7d9] rounded-sm md:px-6 py-5 md:min-w-[450px] md:max-w-[500px] md:mb-3 md:mt-3 sm:mb-1 relative z-30 transition-all duration-500 ease-in-out text-[.9rem] md:text-right sm:text-left sm">
           {data.description}
         </div>
         <div className="data text-[#b8c7d9] text-[.8rem] tracking-wide mt-2 flex gap-3 md:text-right">
