@@ -23,7 +23,7 @@ export default function JumpToTop() {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-5 md:p-5 z-40 right-5 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-900 transition-colors"
+      className="fixed bottom-5 md:p-3 z-40 right-5 bg-black text-white p-3 rounded-full shadow-lg hover:bg-gray-900 transition-colors"
       aria-label="Jump to top"
     >
       ↑
