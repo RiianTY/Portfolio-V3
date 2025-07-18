@@ -111,7 +111,7 @@ export default function Navbar() {
           menuOpen && visible ? "translate-x-0" : "translate-x-full"
         }`}
         style={{
-          backgroundColor: menuOpen ? "#004b4b" : "#1e293b",
+          backgroundColor: menuOpen ? "black" : "black",
           transition: "background-color 0.3s",
         }}
       >
