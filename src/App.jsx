@@ -57,7 +57,7 @@ export default function App() {
       </div>
 
       <div id="projects" className="hero mb-30 z-30">
-        <h1 className=" hero-title">My Projects</h1>
+        <h1 className=" hero-title">Projects</h1>
         <span className="hero-line"></span>
       </div>
       <div className="projects-list">{mappedData}</div>
