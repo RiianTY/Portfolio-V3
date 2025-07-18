@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="z-30 h-[100vh] about-section">
+    <section className="z-30 mb-30 h-[100vh] about-section">
       <div
         id="about-me"
         className="container flex flex-col h-full items-center justify-center"

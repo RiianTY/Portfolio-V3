@@ -22,12 +22,13 @@ export default function Header() {
           full-stack I am currently looking for a job in the industry, so if you
           are interested in hiring me, please&nbsp;
           <a
-            className="text-[#ffff] hover:text-[#]"
+            className="icon text-[#ffff] hover:text-[#]"
             href="mailto:info@ryandaynes.uk"
           >
             click here to get in touch!
           </a>
         </p>
+
         <div className="flex justify-center socials gap-3">
           <a className="icon" href="https://x.com/RiianTTV">
             <svg className="icon" width="32px" height="32px">

@@ -22,8 +22,8 @@ export default function Projects(data) {
         <h1 className=" data text-slate-100 text-[1.6rem] font-semibold md:mb-4 sm:mt-4 sm:mb-1">
           {data.title}
         </h1>
-        <div className="desc-box md:bg-gray-800 text-[#b8c7d9] rounded-sm md:px-6 py-5 md:min-w-[450px] md:max-w-[500px] md:mb-3 md:mt-3 sm:mb-1 relative z-30 transition-all duration-500 ease-in-out text-[.9rem] md:text-right sm:text-left sm">
-          {data.description}
+        <div className="desc-box md:bg-black text-[#b8c7d9] rounded-sm md:px-6 py-5 md:min-w-[450px] md:max-w-[500px] md:mb-3 md:mt-3 sm:mb-1 relative z-30 transition-all duration-500 ease-in-out text-[.9rem] md:text-right sm:text-left">
+          <div>{data.description}</div>
         </div>
         <div className="data text-[#b8c7d9] text-[.8rem] tracking-wide mt-2 flex gap-3 md:text-right">
           {stack}
@@ -46,20 +46,22 @@ export default function Projects(data) {
             </svg>
           </a>
           <a href={data.live} target="_blank" rel="noreferrer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-10 h-10 inline-block opacity-80 hover:opacity-100 transition-opacity duration-200 text-[#b8c7d9] hover:text-[#ffff] hover:scale-110 cursor-pointer"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M17 7L7 17M17 7h-6m6 0v6"
-              />
-            </svg>
+            {data.live ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-10 h-10 inline-block opacity-80 hover:opacity-100 transition-opacity duration-200 text-[#b8c7d9] hover:text-[#ffff] hover:scale-110 cursor-pointer"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M17 7L7 17M17 7h-6m6 0v6"
+                />
+              </svg>
+            ) : null}
           </a>
         </div>
       </div>

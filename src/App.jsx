@@ -56,7 +56,7 @@ export default function App() {
         <About />
       </div>
 
-      <div id="projects" className="hero mb-30 mt-30 mt-50 z-30">
+      <div id="projects" className="hero mb-30 z-30">
         <h1 className=" hero-title">My Projects</h1>
         <span className="hero-line"></span>
       </div>
